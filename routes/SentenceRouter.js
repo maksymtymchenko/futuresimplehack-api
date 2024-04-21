@@ -2,12 +2,12 @@ import Router from 'express';
 
 import SentenceController from '../controllers/SentenceController.js';
 
-const router = Router();
+const sentenceRouter = Router();
 
-router.get('/sentences', SentenceController.getAllSentences)
-router.get('/sentences/:id', SentenceController.getOneSentence)
-router.post('/sentences', SentenceController.createSentence)
-router.put('/sentences/:id', SentenceController.updateSentence)
-router.delete('/sentences/:id', SentenceController.deleteSentence)
+sentenceRouter.get('/sentences', SentenceController.getAllSentences)
+sentenceRouter.get('/sentences/:id', SentenceController.getOneSentence)
+sentenceRouter.post('/sentences', SentenceController.createSentence)
+sentenceRouter.put('/sentences/:id', SentenceController.updateSentence)
+sentenceRouter.delete('/sentences/:id', SentenceController.deleteSentence)
 
-export default router;
+export default sentenceRouter;
