@@ -1,12 +1,10 @@
-import { translate } from '@vitalets/google-translate-api';
-// import { HttpProxyAgent } from 'http-proxy-agent';
+import translate from 'google-translate-api-x';
 
 export async function translateWord(str) {
     try {
-        // const agent = new HttpProxyAgent('http://159.148.146.65');
+        if (!str) throw new Error("Please provide word to translate");
 
-        // const { text } = await translate(str, { to: 'uk', fetchOptions: { agent } });
-        const { text } = await translate(str, { to: 'uk' });
+        const { text } = await translate(str, {to: 'uk'});
 
         return text;
     } catch (e) {
