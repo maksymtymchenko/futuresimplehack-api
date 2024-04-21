@@ -1,4 +1,4 @@
 export const config = {
     PORT: 4444,
-    mongoUrl: ''
+    MONGO_URL: 'mongodb+srv://makstimchenk:j5JDJ8P6Zsuyadda@futuresimplehackcluster.miqbpoc.mongodb.net/'
 }
