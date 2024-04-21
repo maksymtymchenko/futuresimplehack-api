@@ -4,7 +4,10 @@ import cors from "cors";
 
 import appRouter from "./routes/AppRouter.js";
 import sentenceRouter from "./routes/SentenceRouter.js";
+import dictionaryRouter from "./routes/DictionaryRouter.js";
+
 import ErrorHandler from "./middlewares/ErrorHandler.js";
+
 import { config } from "./config.js";
 
 const app = express()
@@ -14,6 +17,7 @@ app.use(cors())
 
 app.use('/', appRouter)
 app.use('/api', sentenceRouter)
+app.use('/api', dictionaryRouter)
 
 app.use(ErrorHandler)
 

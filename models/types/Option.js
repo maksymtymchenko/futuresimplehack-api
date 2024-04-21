@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const OptionSchema = new mongoose.Schema({
+const Option = new mongoose.Schema({
     id: {
         type: Number,
         required: true
@@ -15,4 +15,4 @@ const OptionSchema = new mongoose.Schema({
     }
 });
 
-export default OptionSchema
+export default Option

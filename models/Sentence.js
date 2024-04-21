@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-import OptionSchema from "./Option.js";
+import Option from "./types/Option.js";
 
 const SentenceSchema = new mongoose.Schema({
     sentence: {
@@ -8,7 +8,7 @@ const SentenceSchema = new mongoose.Schema({
         required: true
     },
     options: {
-        type: [OptionSchema],
+        type: [Option],
         required: true
     },
     url: {

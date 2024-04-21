@@ -3,57 +3,52 @@ import SentenceService from '../services/SentenceService.js';
 class SentenceController {
     async createSentence(req, res, next) {
         try {
-            const post = await SentenceService.createSentence(req.body);
+            const sentence = await SentenceService.createSentence(req.body);
 
-            return res.json(post)
+            return res.json(sentence)
         } catch (e) {
             next(e)
-            // res.status(500).json({error: e})
         }
     }
 
     async getAllSentences(req, res, next) {
         try {
-            const posts = await SentenceService.getAllSentences();
+            const sentences = await SentenceService.getAllSentences();
 
-            return res.json(posts);
+            return res.json(sentences);
         } catch (e) {
             next(e)
-            // res.status(500).json({error: e})
         }
 
     }
 
     async getOneSentence(req, res, next) {
         try {
-            const post = await SentenceService.getOneSentence(req.params.id);
+            const sentence = await SentenceService.getOneSentence(req.params.id);
 
-            return res.json(post)
+            return res.json(sentence)
         } catch (e) {
             next(e)
-            // res.status(500).json({error: e})
         }
     }
 
     async updateSentence(req, res, next) {
         try {
-            const updatedPost = await SentenceService.updateSentence(req.body);
+            const updatedSentence = await SentenceService.updateSentence(req.body);
 
-            return res.json(updatedPost);
+            return res.json(updatedSentence);
         } catch (e) {
-            // res.status(500).json({error: e})
             next(e)
         }
     }
 
     async deleteSentence(req, res, next) {
         try {
-            const post = await SentenceService.deleteSentence(req.params.id);
+            const sentence = await SentenceService.deleteSentence(req.params.id);
 
-            return res.json(post);
+            return res.json(sentence);
         } catch (e) {
             next(e)
-            // res.status(500).json({error: e})
         }
     }
 
