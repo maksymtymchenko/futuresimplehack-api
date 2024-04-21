@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from 'mongoose';
 import cors from "cors";
 
-import appRouter from "./routes/appRouter.js";
+import appRouter from "./routes/AppRouter.js";
 import sentenceRouter from "./routes/SentenceRouter.js";
 import ErrorHandler from "./middlewares/ErrorHandler.js";
 import { config } from "./config.js";
