@@ -1,6 +1,6 @@
 import DictionarySchema from "../models/Dictionary.js";
 
-import {translateWord} from "../utils/translateWord.js"
+import { translateWord } from "../utils/translateWord.js"
 
 class DictionaryService {
     async createDictionary(dictionary) {

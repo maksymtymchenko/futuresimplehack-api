@@ -5,6 +5,7 @@ import cors from "cors";
 import appRouter from "./routes/AppRouter.js";
 import sentenceRouter from "./routes/SentenceRouter.js";
 import dictionaryRouter from "./routes/DictionaryRouter.js";
+import achievementRouter from "./routes/AchievementRouter.js";
 
 import ErrorHandler from "./middlewares/ErrorHandler.js";
 
@@ -18,6 +19,7 @@ app.use(cors())
 app.use('/', appRouter)
 app.use('/api', sentenceRouter)
 app.use('/api', dictionaryRouter)
+app.use('/api', achievementRouter)
 
 app.use(ErrorHandler)
 

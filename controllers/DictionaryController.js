@@ -51,7 +51,6 @@ class DictionaryController {
             next(e)
         }
     }
-
 }
 
 export default new DictionaryController();
