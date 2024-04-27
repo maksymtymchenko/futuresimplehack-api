@@ -1,6 +1,28 @@
-**API Doc for** [**https://futuresimplehack-api.onrender.com/**](https://futuresimplehack-api.onrender.com/)
+# Future Perfect
 
-**Endpoints:**
+Future Perfect - це платформа для вивчення англійської мови, яка допомагає вам досягти майбутнього ідеального результату в оволодінні мовою.
+
+## Огляд проекту
+
+Future Perfect складається з двох основних частин: фронтенду та бекенду. Фронтенд розроблений з використанням React та MUI, а бекенд з Node.js, Express та MongoDB. Проект розгорнуто за допомогою Vercel (фронтенд) та Render (бекенд).
+
+- [Демо](https://futuresimplehack-ui.vercel.app/auth)
+
+- [UI GitHub Repository](https://github.com/maksymtymchenko/futuresimplehack-ui/tree/master)
+- [API GitHub Repository](https://github.com/maksymtymchenko/futuresimplehack-api/tree/main)
+
+## Інструкції щодо запуску
+
+Для запуску проекту вам потрібно виконати наступну команду:
+```bash
+npm run start (use for PROD env)
+npm run dev (use for DEV and STG env)
+```
+
+
+## API Doc for [**https://futuresimplehack-api.onrender.com/**](https://futuresimplehack-api.onrender.com/)
+
+### Endpoints:
 
 **_Sentences:_**
 
@@ -12,7 +34,7 @@
 
 **{**
 
-**"\_id": "662503e353869d56e925233a",** 
+**\_id": "662503e353869d56e925233a",** 
 
 **"sentence": "Sentence 222222",** 
 
